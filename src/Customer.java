@@ -18,7 +18,7 @@ class Customer {
         return _name;
     }
 
-    public String statement() {
+    public String getStatement() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
         Enumeration rentals = _rentals.elements();
