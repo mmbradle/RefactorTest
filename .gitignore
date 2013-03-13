@@ -4,3 +4,26 @@
 *.jar
 *.war
 *.ear
+
+.project
+.metadata
+.gradle/**
+.settings/**
+bin/**
+target/**
+tmp/**
+tmp/**/*
+build
+target
+bin
+out
+
+# Windows image file caches
+Thumbs.db 
+
+# Folder config file
+Desktop.ini
+
+*.tmp
+*.bak
+*.swp
