@@ -7,19 +7,19 @@ public class Movie {
 
     private String title;
 
-    private int priceCodeAsInt;
+    private int priceCode;
 
     public Movie(final String title, final int priceCode) {
         this.title = title;
-        this.priceCodeAsInt = priceCode;
+        this.priceCode = priceCode;
     }
 
     public int getPriceCode() {
-        return this.priceCodeAsInt;
+        return this.priceCode;
     }
 
     public void setPriceCode(final int arg) {
-        this.priceCodeAsInt = arg;
+        this.priceCode = arg;
     }
 
     public String getTitle() {
