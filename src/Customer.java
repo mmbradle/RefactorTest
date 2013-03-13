@@ -2,26 +2,26 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 class Customer {
-    private String _name;
+    private String name;
 
-    private Vector _rentals = new Vector();
+    private Vector rentals = new Vector();
 
     public Customer(String name) {
-        _name = name;
+        name = name;
     };
 
     public void addRental(Rental arg) {
-        _rentals.addElement(arg);
+        rentals.addElement(arg);
     }
 
     public String getName() {
-        return _name;
+        return name;
     }
 
     public String getStatement() {
         double totalAmount = 0;
         int frequentRenterPoints = 0;
-        Enumeration rentals = _rentals.elements();
+        Enumeration rentals = rentals.elements();
         StringBuilder stringBuilder = new StringBuilder("Rental Record for");
         stringBuilder.append(getName());
         stringBuilder.append("\n");
