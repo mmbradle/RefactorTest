@@ -30,8 +30,7 @@ public class CustomerTest extends TestCase {
         int daysRented = 3;
         Rental rental = new Rental(movie, daysRented);
         customer.addRental(rental);
-        String string = customer.statement();
-        System.out.println(string);
+        String string = customer.getStatement();
         Assert.assertTrue(string.contains(name));
         Assert.assertTrue(string.contains(title));
         Assert.assertTrue(string.contains("9.0"));
