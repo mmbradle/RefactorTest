@@ -5,24 +5,24 @@ public class Movie {
 
     public static final int NEW_RELEASE = 1;
 
-    private String _title;
+    private String title;
 
-    private int _priceCode;
+    private int priceCodeAsInt;
 
-    public Movie(String title, int priceCode) {
-        _title = title;
-        _priceCode = priceCode;
+    public Movie(final String title, final int priceCode) {
+        this.title = title;
+        this.priceCodeAsInt = priceCode;
     }
 
     public int getPriceCode() {
-        return _priceCode;
+        return this.priceCodeAsInt;
     }
 
-    public void setPriceCode(int arg) {
-        _priceCode = arg;
+    public void setPriceCode(final int arg) {
+        this.priceCodeAsInt = arg;
     }
 
     public String getTitle() {
-        return _title;
+        return this.title;
     }
 }
