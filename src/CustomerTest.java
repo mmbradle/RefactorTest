@@ -39,8 +39,9 @@ public class CustomerTest extends TestCase {
     public void testStatementBranches() {
         Customer customer = new Customer("Adams, Daryl");
         customer.addRental(new Rental(new Movie("Title1", 0), 2));
-        customer.addRental(new Rental(new Movie("Title2", 1), 2));
-        customer.addRental(new Rental(new Movie("Title3", 2), 2));
+        customer.addRental(new Rental(new Movie("Title1", 0), 3));
+        customer.addRental(new Rental(new Movie("Title2", 1), 3));
+        customer.addRental(new Rental(new Movie("Title3", 2), 4));
         customer.getStatement();
     }
 

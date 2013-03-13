@@ -11,4 +11,11 @@ public class MovieTest extends TestCase {
         Assert.assertEquals(title, movie.getTitle());
         Assert.assertEquals(priceCode, movie.getPriceCode());
     }
+    
+    public void testSetPriceCode() {
+        String title = "Fletch";
+        int priceCode = 1;
+        Movie movie = new Movie(title, priceCode);
+        movie.setPriceCode(0);
+    }
 }
