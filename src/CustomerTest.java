@@ -36,4 +36,24 @@ public class CustomerTest extends TestCase {
         Assert.assertTrue(string.contains("9.0"));
     }
 
+    public void testStatementBranches() {
+        Customer customer = new Customer("Adams, Daryl");
+        customer.addRental(new Rental(new Movie("Title1", 0), 2));
+        customer.addRental(new Rental(new Movie("Title2", 1), 2));
+        customer.addRental(new Rental(new Movie("Title3", 2), 2));
+        customer.getStatement();
+    }
+
+    public void testStatementException() {
+        boolean caughtExpecption = false;
+        Customer customer = new Customer("Adams, Daryl");
+        customer.addRental(new Rental(new Movie("Title1", 3), 2));
+        try {
+            customer.getStatement();
+        }
+        catch (IllegalArgumentException e) {
+            caughtExpecption = true;
+        }
+        Assert.assertTrue(caughtExpecption);
+    }
 }

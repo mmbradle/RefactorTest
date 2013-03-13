@@ -40,6 +40,8 @@ class Customer {
                     if (each.getDaysRented() > 3)
                         thisAmount += (each.getDaysRented() - 3) * 1.5;
                     break;
+                default:
+                    throw new IllegalArgumentException(each.getMovie().getPriceCode() + " is not a valid priceCode");
             }
             // add frequent renter points
             frequentRenterPoints++;
