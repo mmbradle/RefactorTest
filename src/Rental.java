@@ -34,7 +34,7 @@ class Rental {
                     charge += (this.daysRented - 3) * 1.5;
                 break;
             default:
-                throw new IllegalArgumentException(this.movie.getPriceCode() + " is not a valid priceCode");
+                throw new IllegalArgumentException(this.movie.getPriceCode() + " is not a valid priceCode.");
         }
         return charge;
     }
