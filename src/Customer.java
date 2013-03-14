@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 class Customer {
+    private int causeConflict = 0;
+
     private String name;
 
     private ArrayList<Rental> rentals = new ArrayList<Rental>();

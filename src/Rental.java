@@ -1,19 +1,19 @@
 class Rental {
-    private Movie _movie;
+    private Movie movie;
 
-    private int _daysRented;
+    private int daysRented;
 
     public Rental(Movie movie, int daysRented) {
-        _movie = movie;
-        _daysRented = daysRented;
+        movie = movie;
+        daysRented = daysRented;
     }
 
     public int getDaysRented() {
-        return _daysRented;
+        return daysRented;
     }
 
     public Movie getMovie() {
-        return _movie;
+        return movie;
     }
     
     public double getCharge() {
