@@ -4,37 +4,37 @@ class Rental {
     private int daysRented;
 
     public Rental(Movie movie, int daysRented) {
-        movie = movie;
-        daysRented = daysRented;
+        this.movie = movie;
+        this.daysRented = daysRented;
     }
 
     public int getDaysRented() {
-        return daysRented;
+        return this.daysRented;
     }
 
     public Movie getMovie() {
-        return movie;
+        return this.movie;
     }
     
     public double getCharge() {
         double charge = 0;
         // determine amounts for each line
-        switch (this.getMovie().getPriceCode()) {
+        switch (this.movie.getPriceCode()) {
             case Movie.REGULAR:
                 charge += 2;
-                if (this.getDaysRented() > 2)
-                    charge += (this.getDaysRented() - 2) * 1.5;
+                if (this.daysRented > 2)
+                    charge += (this.daysRented - 2) * 1.5;
                 break;
             case Movie.NEW_RELEASE:
-                charge += this.getDaysRented() * 3;
+                charge += this.daysRented * 3;
                 break;
             case Movie.CHILDRENS:
                 charge += 1.5;
-                if (this.getDaysRented() > 3)
-                    charge += (this.getDaysRented() - 3) * 1.5;
+                if (this.daysRented > 3)
+                    charge += (this.daysRented - 3) * 1.5;
                 break;
             default:
-                throw new IllegalArgumentException(this.getMovie().getPriceCode() + " is not a valid priceCode");
+                throw new IllegalArgumentException(this.movie.getPriceCode() + " is not a valid priceCode");
         }
         return charge;
     }
