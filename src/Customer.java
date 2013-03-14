@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 class Customer {
-    private int causeConflict = 0;
+    private int causeConflictLeft = 0;
 
     private String name;
 
