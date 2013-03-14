@@ -18,7 +18,7 @@ class Customer {
     }
 
     public String getStatement() {
-        double totalAmount = 0;
+        double total = 0;
         int frequentRenterPoints = 0;
         StringBuilder stringBuilder = new StringBuilder("Rental Record for");
         stringBuilder.append(getName());
@@ -54,10 +54,10 @@ class Customer {
             stringBuilder.append("\t");
             stringBuilder.append(thisAmount);
             stringBuilder.append("\n");
-            totalAmount += thisAmount;
+            total += thisAmount;
         }
         // add footer lines
-        stringBuilder.append("Amount owed is " + String.valueOf(totalAmount) + "\n");
+        stringBuilder.append("Amount owed is " + String.valueOf(total) + "\n");
         stringBuilder.append("You earned " + String.valueOf(frequentRenterPoints) + " frequent renter points");
         return stringBuilder.toString();
     }
