@@ -22,6 +22,7 @@ public class CustomerTest extends TestCase {
     }
 
     public void testStatement() {
+        // comment
         String name = "Doe, John";
         Customer customer = new Customer(name);
         String title = "Fletch";
