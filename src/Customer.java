@@ -19,6 +19,19 @@ class Customer {
         return name;
     }
 
+    public String htmlStatement() {
+        String result = "<H1>Rentals for <EM>" + getName() + "</EM></H1><P>\n";
+        for (Rental each : this.rentals) {
+            // show figures for each rental
+            result += each.getMovie().getTitle() + ": " + String.valueOf(each.getCharge()) + "<BR>\n";
+        }
+        // add footer lines
+        result += "<P>You owe <EM>" + String.valueOf(getTotalCharge()) + "</EM><P>\n";
+        result += "On this rental you earned <EM>" + String.valueOf(getTotalFrequentRenterPoints())
+                + "</EM> frequent renter points<P>";
+        return result;
+    }
+
     public String getStatement() {
         StringBuilder stringBuilder = new StringBuilder("Rental Record for");
         stringBuilder.append(getName());
@@ -33,7 +46,8 @@ class Customer {
         }
         // add footer lines
         stringBuilder.append("Amount owed is " + String.valueOf(getTotalCharge()) + "\n");
-        stringBuilder.append("You earned " + String.valueOf(getTotalFrequentRenterPoints()) + " frequent renter points");
+        stringBuilder
+                .append("You earned " + String.valueOf(getTotalFrequentRenterPoints()) + " frequent renter points");
         return stringBuilder.toString();
     }
 
