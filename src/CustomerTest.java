@@ -43,7 +43,7 @@ public class CustomerTest extends TestCase {
         customer.addRental(new Rental(new Movie("Title1", 0), 3));
         customer.addRental(new Rental(new Movie("Title2", 1), 3));
         customer.addRental(new Rental(new Movie("Title3", 2), 4));
-        customer.getStatement();
+        System.out.println(customer.getStatement());
     }
 
     public void testStatementException() {
