@@ -16,7 +16,7 @@ class Customer {
     public String getName() {
         return name;
     }
-// a change
+
     public String getStatement() {
         
         double totalPrice = 0;
