@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
-	<classpathentry sourcepath="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/junit/junit/4.8.2/source/cccca612a66b8387c399be31d69daf000de2ac9e/junit-4.8.2-sources.jar" kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/junit/junit/4.8.2/jar/c94f54227b08100974c36170dcb53329435fe5ad/junit-4.8.2.jar" exported="true"/>
-	<classpathentry sourcepath="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/net.sourceforge.cobertura/cobertura/1.9.4.1/source/da5e7d36b91f9a182c59ad8718251000afd8c87e/cobertura-1.9.4.1-sources.jar" kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/net.sourceforge.cobertura/cobertura/1.9.4.1/jar/c72a431cb65bdce793bb147915c2e311941fcb11/cobertura-1.9.4.1.jar" exported="true"/>
-	<classpathentry sourcepath="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/oro/oro/2.0.8/source/3598e790ecd76ff7eb249853d4d00822ae1a5e71/oro-2.0.8-sources.jar" kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/oro/oro/2.0.8/jar/5592374f834645c4ae250f4c9fbb314c9369d698/oro-2.0.8.jar" exported="true"/>
-	<classpathentry sourcepath="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/asm/asm/3.0/source/f0c69d3809861b943404ebe564df944cbb7cde93/asm-3.0-sources.jar" kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/asm/asm/3.0/jar/d1616c03f056291a2314510dea75739b15b4d415/asm-3.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/asm/asm-tree/3.0/jar/6fff655717d1e1871decfe9f8e46a531e8df3a31/asm-tree-3.0.jar" exported="true"/>
-	<classpathentry sourcepath="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/log4j/log4j/1.2.9/source/b70470eb359ebea0bff6525c0bdec37528348ec0/log4j-1.2.9-sources.jar" kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/log4j/log4j/1.2.9/jar/55856d711ab8b88f8c7b04fd85ff1643ffbfde7c/log4j-1.2.9.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/org.apache.ant/ant-launcher/1.7.0/jar/e7e30789211e074aa70ef3eaea59bd5b22a7fa7a/ant-launcher-1.7.0.jar" exported="true"/>
-	<classpathentry sourcepath="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/org.apache.ant/ant/1.7.0/source/58ec0e378f1d33cb72a92ee3a9442909789090db/ant-1.7.0-sources.jar" kind="lib" path="C:/Users/bradleym/.gradle/caches/artifacts-23/filestore/org.apache.ant/ant/1.7.0/jar/9746af1a485e50cf18dcb232489032a847067066/ant-1.7.0.jar" exported="true"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
+	<classpathentry kind="con" path="org.springsource.ide.eclipse.gradle.dsld.classpathcontainer"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
