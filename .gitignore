@@ -5,11 +5,7 @@
 *.war
 *.ear
 
-.project
-.metadata
-.classpath
 .gradle/**
-.settings/**
 bin/**
 target/**
 tmp/**

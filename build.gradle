@@ -1,20 +1,9 @@
 sourceCompatibility = 1.6
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'maven'
-apply plugin: 'checkstyle'
-apply plugin: 'findbugs'
-
-buildscript {
-    apply from: 'https://github.com/valkolovos/gradle_cobertura/raw/master/repo/gradle_cobertura/gradle_cobertura/1.0/coberturainit.gradle'
-}
 
 repositories {
     mavenCentral()
-    maven {
-        url 'http://localhost:8088/nexus/content/groups/public'
-    }
 }
 
 dependencies {
@@ -36,30 +25,4 @@ sourceSets {
         }
         output.classesDir = file("$buildDir/test-classes")
     }
-}
-
-
-// The following ensures that Eclipse uses only one src directory
-eclipse {
-    classpath {
-        file {
-            //closure executed after .classpath content is loaded from existing file
-            //and after gradle build information is merged
-            whenMerged { classpath ->
-                classpath.entries.removeAll { entry -> entry.kind == 'src'}
-                def srcEntry = new org.gradle.plugins.ide.eclipse.model.SourceFolder('src', null)
-                srcEntry.dir = file("$projectDir/src")
-                classpath.entries.add( srcEntry )
-            }
-        }
-    }
-}
-
-project.findbugs.ignoreFailures = true
-project.checkstyle.ignoreFailures = true
-project.checkstyle.configFile = new File("$projectDir/config", "checkstyle.xml")
-
-cobertura {
-    coverageSourceDirs = ['src', file("$projectDir/src")]
-    coverageDirs = [file("$projectDir/build/classes")]
 }
